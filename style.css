@@ -1,0 +1,167 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", serif;
+}
+
+/* Header */
+header {
+    background-color: #ffaad4; /* Açık pembe */
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+header .site-title {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff66b2;
+}
+
+/* Hero Bölümü */
+.hero {
+    background-color: #ffbbd4; /* Daha soluk pembe */
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    animation: slideIn 2s ease-out;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #555;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Featured Posts */
+.featured-posts {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.featured-posts h2 {
+    font-size: 32px;
+    color: #ff66b2;
+    margin-bottom: 30px;
+}
+
+.posts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.post h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.post p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+.post:hover img {
+    transform: scale(1.05);
+}
+
+.post a {
+    text-decoration: none;
+    color: #ff66b2;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.post a:hover {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #ffaad4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Animasyonlar */
+@keyframes slideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
